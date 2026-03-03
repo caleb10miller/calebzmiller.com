@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Caleb Miller</title>
+  <meta name="description" content="Contact Caleb Miller." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-blob blob-1" aria-hidden="true"></div>
+  <div class="bg-blob blob-2" aria-hidden="true"></div>
+  <div class="bg-blob blob-3" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="mark" aria-hidden="true"></span>
+        <span>
+          <span class="name">Caleb Miller</span>
+          <span class="role">Data Engineer • Philadelphia</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <span class="kicker"><span class="dot" aria-hidden="true"></span>Contact</span>
+      <h1 class="h1">Let’s connect</h1>
+      <p class="lede">The fastest way to reach me is email: <a href="mailto:caleb10miller@gmail.com">caleb10miller@gmail.com</a>.</p>
+
+      <div class="grid mt20">
+        <div class="card" style="grid-column: span 12;">
+          <h3>Send a message</h3>
+          <p class="helper">This uses your email client (mailto). If you want a “real” form submission later, we can wire it to Formspree / Netlify Forms without changing hosting.</p>
+
+          <form class="form mt12" action="mailto:caleb10miller@gmail.com" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="Name" type="text" autocomplete="name" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="Email" type="email" autocomplete="email" placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="6" placeholder="What would you like to talk about?"></textarea>
+            </div>
+            <div class="actions">
+              <button class="btn primary" type="submit">Send</button>
+              <a class="btn ghost" href="https://linkedin.com/in/calebzmiller" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="small">© 2026 Caleb Miller</div>
+      <nav class="social" aria-label="Social">
+        <a href="https://github.com/calebzmiller" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/calebzmiller" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:caleb10miller@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

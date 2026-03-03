@@ -1,6 +1,14 @@
 # calebzmiller.com
 
-Personal site, hosted on [GitHub Pages](https://pages.github.com/).
+Personal site with multiple pages (Home, About, Resume, Contact) written in plain HTML/CSS and hosted on [GitHub Pages](https://pages.github.com/).
+
+## Pages
+
+- `index.html` – homepage with hero section and links to other pages
+- `about.html` – biography and projects list
+- `resume.html` – résumé download and summary
+- `contact.html` – contact information and mailto form
+- `404.html` – custom not‑found page
 
 ## Deploy
 

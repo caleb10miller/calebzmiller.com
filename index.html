@@ -1,25 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caleb Miller</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caleb Miller — Data Engineer</title>
+  <meta name="description" content="Caleb Miller — Data Engineer in Philadelphia building Snowflake + dbt data platforms in healthcare." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <main>
-    <h1>Caleb Miller</h1>
-    <p class="tagline">Building things on the web.</p>
-    <p class="bio">
-      Hi, I'm Caleb. This is my personal site. You can find me elsewhere below.
-    </p>
-    <nav class="links">
-      <a href="https://github.com/calebzmiller" rel="noopener noreferrer" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/calebzmiller" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-blob blob-1" aria-hidden="true"></div>
+  <div class="bg-blob blob-2" aria-hidden="true"></div>
+  <div class="bg-blob blob-3" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="mark" aria-hidden="true"></span>
+        <span>
+          <span class="name">Caleb Miller</span>
+          <span class="role">Data Engineer • Philadelphia</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid hero-grid--single">
+        <div>
+          <span class="kicker"><span class="dot" aria-hidden="true"></span>Data engineering + analytics</span>
+          <h1 class="h1">I build reliable data platforms that turn complex healthcare data into insight.</h1>
+          <p class="lede">I’m a Data Engineer at NeuroFlow, focused on Snowflake-native pipelines and dbt models that power client reporting, executive analytics, and production-grade ML workflows.</p>
+
+          <div class="actions">
+            <a class="btn primary" href="resume.html">View résumé</a>
+            <a class="btn ghost" href="about.html">About me</a>
+            <a class="btn ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="kicker"><span class="dot" aria-hidden="true"></span>Quick facts</span>
+      <div class="grid facts">
+        <div class="card fact" style="grid-column: span 12;">
+          <h3>Current focus</h3>
+          <p>Snowflake + dbt modeling, production ELT, data governance, and ML workflows with Snowpark.</p>
+        </div>
+        <div class="card fact" style="grid-column: span 6;">
+          <h3>Based in</h3>
+          <p>Philadelphia, PA</p>
+        </div>
+        <div class="card fact" style="grid-column: span 6;">
+          <h3>Background</h3>
+          <p>Business Analytics → M.S. Data Science</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="kicker"><span class="dot" aria-hidden="true"></span>Highlights</span>
+      <ul class="list">
+        <li><span class="bullet" aria-hidden="true"></span><span>Lead Data Engineer for a claims-based analytics platform supporting a multi-year pay-for-performance contract.</span></li>
+        <li><span class="bullet" aria-hidden="true"></span><span>Re-architected legacy entity resolution into a Snowflake-native SQL solution to improve recall and reduce complexity.</span></li>
+        <li><span class="bullet" aria-hidden="true"></span><span>Built automated training + inference workflows inside Snowflake using Snowpark ML.</span></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <span class="kicker"><span class="dot" aria-hidden="true"></span>Links</span>
+      <div class="grid mt12">
+        <div class="card">
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/calebzmiller" target="_blank" rel="noopener noreferrer">github.com/calebzmiller</a></p>
+        </div>
+        <div class="card">
+          <h3>LinkedIn</h3>
+          <p><a href="https://linkedin.com/in/calebzmiller" target="_blank" rel="noopener noreferrer">linkedin.com/in/calebzmiller</a></p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="small">© <span id="year">2026</span> Caleb Miller</div>
+      <nav class="social" aria-label="Social">
+        <a href="https://github.com/calebzmiller" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/calebzmiller" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="contact.html">Email</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
