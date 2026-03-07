@@ -210,9 +210,9 @@ body {
 }
 
 .nav-links a.active {
-  color: var(--text);
-  background: rgba(15,23,42,.06);
-  box-shadow: 0 12px 26px rgba(15,23,42,.08);
+  color: #0b1220; /* slightly darker + crisper */
+  background: rgba(15,23,42,.08); /* a touch stronger */
+  box-shadow: 0 10px 22px rgba(15,23,42,.06);
 }
 
 
