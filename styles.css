@@ -90,7 +90,7 @@ body {
 .sql-block {
   position: absolute;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  color: rgba(74, 222, 128, 0.13);
+  color: rgba(74, 222, 128, 0.3);
   text-shadow: 0 0 8px rgba(34,197,94,.05);
   filter: blur(0.1px);
   line-height: 1.55;
