@@ -15,7 +15,7 @@ a { color: inherit; }
   --font: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 
   /* Layout */
-  --container: 1040px;
+  --container: 1320px;
   --nav-height: 80px;
 
   --radius-xl: 26px;
@@ -523,7 +523,10 @@ input:focus, textarea:focus {
 
 main > section + section { margin-top: 38px; }
 
-.hero-grid--single { grid-template-columns: 1fr; max-width: 760px; }
+.hero-grid--single {
+  grid-template-columns: 1fr;
+  max-width: 980px;
+}
 
 .facts { margin-top: 18px; gap: 18px; }
 .fact h3 { font-size: 1.02rem; margin-bottom: 8px; }
