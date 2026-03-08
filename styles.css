@@ -419,7 +419,7 @@ main {
 
 .timeline li {
   position: relative;
-  padding: 20px 22px;
+  padding: 18px 22px;
   border-radius: var(--radius-lg);
   background: var(--card-bg);
   border: 1px solid var(--card-stroke);
