@@ -229,28 +229,40 @@ body {
   min-height: var(--nav-height);
   display: flex;
   align-items: center;
+
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  background: rgba(226, 232, 240, 0.70);
-  border-bottom: 1px solid rgba(255,255,255,.14);
-  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.10);
+
+  /* slightly more transparent so background blends naturally */
+  background: rgba(226, 232, 240, 0.66);
+
+  border-bottom: 1px solid rgba(255,255,255,.12);
+
+  /* softer + more natural depth */
+  box-shadow:
+    0 6px 18px rgba(2, 6, 23, 0.08),
+    0 18px 40px rgba(2, 6, 23, 0.06);
+
   padding: 1.25rem 0;
   position: sticky;
 }
 
+/* subtle fade instead of glow */
 .site-header::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -22px;
-  height: 22px;
+  bottom: -18px;
+  height: 18px;
   pointer-events: none;
+
+  /* dark neutral fade (not blue glow) */
   background: linear-gradient(
-    180deg,
-    rgba(226, 232, 240, 0.24) 0%,
-    rgba(226, 232, 240, 0.10) 35%,
-    rgba(4, 22, 44, 0.00) 100%
+    to bottom,
+    rgba(2, 6, 23, 0.10) 0%,
+    rgba(2, 6, 23, 0.06) 40%,
+    rgba(2, 6, 23, 0.00) 100%
   );
 }
 
