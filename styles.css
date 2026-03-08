@@ -109,11 +109,6 @@ body {
   user-select: none;
 }
 
-.hero .sql-track,
-.hero .sql-track pre {
-  color: rgba(34,197,94,.18);
-}
-
 .sql-track pre {
   margin: 0;
   white-space: pre;
