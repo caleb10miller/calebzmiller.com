@@ -11,6 +11,26 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <div class="bg-sql">
+    <pre>
+    select member_id, claim_date, paid_amount
+    from fct_claims
+    where service_year = 2025;
+
+    with engagement as (
+      select patient_id, min(event_date) as first_engagement_date
+      from int_patient_events
+      group by 1
+    )
+
+    select provider_id, count(*) as visits
+    from fct_visits
+    group by 1;
+
+    select claim_id, dx_code
+    from fct_claim_diagnosis;
+    </pre>
+    </div>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="bg-blob blob-1" aria-hidden="true"></div>
   <div class="bg-blob blob-2" aria-hidden="true"></div>
@@ -38,23 +58,6 @@
 
   <main id="main">
     <section class="hero">
-      <div class="hero-sql-bg">
-        <pre>
-        select member_id, claim_date, paid_amount
-        from fct_claims
-        where service_year = 2025;
-
-        with engagement as (
-          select patient_id, min(event_date) as first_engagement_date
-          from int_patient_events
-          group by 1
-        )
-
-        select provider_id, count(*) as visits
-        from fct_visits
-        group by 1;
-        </pre>
-        </div>
       <div class="hero-grid hero-grid--single">
         <div>
           <span class="kicker"><span aria-hidden="true"></span>Data Engineering + Applied ML</span>
