@@ -229,11 +229,16 @@ body {
   min-height: var(--nav-height);
   display: flex;
   align-items: center;
+
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+
+  /* clean glass gray-blue */
   background: rgba(226, 232, 240, 0.68);
-  border-bottom: 1px solid rgba(255,255,255,.10);
-  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08);
+
+  border-bottom: none;     /* remove hard edge */
+  box-shadow: none;        /* remove glow entirely */
+
   padding: 1.25rem 0;
 }
 
@@ -243,13 +248,15 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -14px;
-  height: 14px;
+  bottom: -12px;
+  height: 12px;
   pointer-events: none;
+
   background: linear-gradient(
     to bottom,
-    rgba(185, 195, 210, 0.55) 0%,
-    rgba(120, 140, 170, 0.22) 45%,
+    rgba(226, 232, 240, 0.68) 0%,
+    rgba(226, 232, 240, 0.28) 40%,
+    rgba(4, 22, 44, 0.08) 75%,
     rgba(4, 22, 44, 0.00) 100%
   );
 }
