@@ -525,7 +525,7 @@ main > section + section { margin-top: 38px; }
 
 .hero-grid--single {
   grid-template-columns: 1fr;
-  max-width: 1180px;
+  max-width: none;
 }
 
 .facts { margin-top: 18px; gap: 18px; }
