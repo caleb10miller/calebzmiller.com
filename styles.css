@@ -1,6 +1,6 @@
 /* =========================================================
    Caleb Miller — Dark background + light cards + composed SQL
-   softened contrast refinement
+   softened contrast refinement + hierarchy polish
    ========================================================= */
 
 /* Reset */
@@ -31,8 +31,10 @@ a { color: inherit; }
 
   --surface-bg: rgba(226, 232, 240, 0.76);
   --surface-stroke: rgba(255, 255, 255, 0.14);
-  --card-bg: rgba(232, 237, 245, 0.70);
-  --card-stroke: rgba(208, 218, 231, 0.42);
+
+  /* Slightly lighter inner cards for better pop */
+  --card-bg: rgba(241, 245, 249, 0.78);
+  --card-stroke: rgba(208, 218, 231, 0.46);
 
   --text: #0b1220;
   --muted: rgba(11, 18, 32, 0.72);
@@ -189,6 +191,17 @@ body {
   animation: driftPiece8 68s ease-in-out infinite;
 }
 
+/* new faint bottom-right support fragment */
+.sql-piece-9 {
+  top: 73%;
+  right: -2%;
+  width: 30vw;
+  font-size: 15px;
+  opacity: 0.24;
+  transform: rotate(-2deg);
+  animation: driftPiece9 66s ease-in-out infinite;
+}
+
 @keyframes driftPiece1 {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(16px); }
@@ -227,6 +240,11 @@ body {
 @keyframes driftPiece8 {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(12px); }
+}
+
+@keyframes driftPiece9 {
+  0%, 100% { transform: rotate(-2deg) translateX(0); }
+  50% { transform: rotate(-2deg) translateX(8px); }
 }
 
 /* ambient glow blobs */
@@ -429,11 +447,11 @@ main {
   background:
     radial-gradient(820px 340px at 12% 0%, rgba(59,130,246,.06), transparent 58%),
     radial-gradient(760px 340px at 92% 18%, rgba(255,255,255,.04), transparent 58%),
-    rgba(226, 232, 240, 0.72);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,.16);
-  box-shadow: 0 22px 65px rgba(2, 6, 23, .18);
+    rgba(233, 238, 246, 0.76);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(255,255,255,.17);
+  box-shadow: 0 26px 70px rgba(2, 6, 23, .20);
   overflow: hidden;
   position: relative;
 }
@@ -573,8 +591,8 @@ main {
   position: relative;
   padding: 18px 22px;
   border-radius: var(--radius-lg);
-  background: rgba(232, 237, 245, 0.72);
-  border: 1px solid rgba(208, 218, 231, 0.42);
+  background: rgba(241, 245, 249, 0.76);
+  border: 1px solid rgba(208, 218, 231, 0.46);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -602,9 +620,9 @@ main {
   width: 100%;
   height: min(78vh, 880px);
   border-radius: var(--radius-xl);
-  border: 1px solid rgba(208, 218, 231, 0.42);
+  border: 1px solid rgba(208, 218, 231, 0.46);
   overflow: hidden;
-  background: rgba(232, 237, 245, 0.72);
+  background: rgba(241, 245, 249, 0.76);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -739,7 +757,8 @@ main > section + section {
 
   .sql-piece-3,
   .sql-piece-5,
-  .sql-piece-7 {
+  .sql-piece-7,
+  .sql-piece-9 {
     display: none;
   }
 
@@ -816,7 +835,8 @@ main > section + section {
   .sql-piece-1,
   .sql-piece-2,
   .sql-piece-6,
-  .sql-piece-8 {
+  .sql-piece-8,
+  .sql-piece-9 {
     display: none;
   }
 
