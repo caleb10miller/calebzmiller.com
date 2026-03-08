@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Caleb Miller — Data Engineer</title>
   <meta name="description" content="Caleb Miller — Data Engineer in Philadelphia building Snowflake + dbt data platforms in healthcare." />
-  <link rel="stylesheet" href="./styles.css?v=4" />
+  <link rel="stylesheet" href="./styles.css?v=5" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
@@ -43,6 +43,17 @@ where assessment_type = 'PHQ-9';</pre>
 
     <div class="sql-piece sql-piece-6">
       <pre>with flags as ( select patient_id, max(is_urgent) as urgent_flag from int_patient_events group by 1 ) select * from flags;</pre>
+    </div>
+
+    <div class="sql-piece sql-piece-7">
+      <pre>select avg(paid_amount) as avg_paid,
+       provider_id
+from fct_claims
+group by 2;</pre>
+    </div>
+
+    <div class="sql-piece sql-piece-8">
+      <pre>select member_id, referral_date, care_program from int_member_referrals where is_active = 1;</pre>
     </div>
   </div>
 
