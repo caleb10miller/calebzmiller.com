@@ -405,7 +405,7 @@ main {
   width: 9px;
   height: 9px;
   border-radius: 3px;
-  background: rgba(37,99,235,.65);
+  background: rgba(29, 78, 216, 0.75); 
 }
 
 /* Timeline */
